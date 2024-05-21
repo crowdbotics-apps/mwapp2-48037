@@ -4,7 +4,7 @@ import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-n
 
 const WelcomeScreen = () => {
   return <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollView}>
+      <Pressable accessibilityHint="Press Me"><ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
           <Pressable><Image style={styles.logo} source={require("./logo.png")} /></Pressable>
@@ -13,13 +13,13 @@ const WelcomeScreen = () => {
           </Text>
         </View>
         
-      <Pressable><View style={styles.wzkDeMGT}></View></Pressable></ScrollView>
-    </SafeAreaView>;
+      <Pressable><View style={styles.wzkDeMGT}></View></Pressable></ScrollView></Pressable>
+    <Pressable style={styles.dIlhepKw}></Pressable></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#F8F8FC",
+    backgroundColor: "#f7fcf8",
     height: "100%"
   },
   scrollView: {
@@ -48,8 +48,12 @@ const styles = StyleSheet.create({
     height: 60,
     width: 140,
     backgroundColor: "#E4E4E4",
-    borderRadius: 0,
-    color: "#777777"
+    borderRadius: 40,
+    color: "#777777",
+    position: "relative"
+  },
+  dIlhepKw: {
+    position: "absolute"
   }
 });
 export default WelcomeScreen;
