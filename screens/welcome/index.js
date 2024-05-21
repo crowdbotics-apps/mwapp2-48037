@@ -13,8 +13,8 @@ const WelcomeScreen = () => {
           </Text>
         </View>
         
-      <Pressable><View style={styles.wzkDeMGT}></View></Pressable></ScrollView></Pressable>
-    <Pressable style={styles.dIlhepKw}></Pressable></SafeAreaView>;
+      </ScrollView></Pressable>
+    <Pressable style={styles.dIlhepKw}></Pressable><Text style={styles.aakvpvAg}>{"Hello  Hope you are having fun with the Platform"}</Text></SafeAreaView>;
 };
 
 const styles = StyleSheet.create({
@@ -44,16 +44,19 @@ const styles = StyleSheet.create({
     color: "#828AB0",
     fontWeight: 700
   },
-  wzkDeMGT: {
-    height: 60,
-    width: 140,
-    backgroundColor: "#E4E4E4",
-    borderRadius: 40,
-    color: "#777777",
-    position: "relative"
-  },
   dIlhepKw: {
     position: "absolute"
+  },
+  aakvpvAg: {
+    width: 342,
+    height: 50,
+    lineHeight: 14,
+    fontSize: 14,
+    borderRadius: 0,
+    position: "absolute",
+    top: 383,
+    left: 12,
+    textAlign: "center"
   }
 });
 export default WelcomeScreen;
