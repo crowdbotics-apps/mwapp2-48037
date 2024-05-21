@@ -7,7 +7,7 @@ const WelcomeScreen = () => {
       <Pressable accessibilityHint="Press Me"><ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
-          <Pressable><Image style={styles.logo} source={require("./logo.png")} /></Pressable>
+          <Image style={styles.logo} source={require("./logo.png")} resizeMode="stretch" />
           <Text style={styles.text}>
             Let's build something amazing together!
           </Text>
