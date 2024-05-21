@@ -1,3 +1,4 @@
+import { Pressable } from "react-native";
 import React from "react";
 import { View, Image, Text, ScrollView, SafeAreaView, StyleSheet } from "react-native";
 
@@ -6,13 +7,13 @@ const WelcomeScreen = () => {
       <ScrollView contentContainerStyle={styles.scrollView}>
         <View style={styles.group} />
         <View style={styles.group}>
-          <Image style={styles.logo} source={require("./logo.png")} />
+          <Pressable><Image style={styles.logo} source={require("./logo.png")} /></Pressable>
           <Text style={styles.text}>
             Let's build something amazing together!
           </Text>
         </View>
-        <Text style={styles.footer}>Made with ❤️ by Crowdbotics</Text>
-      </ScrollView>
+        
+      <Pressable><View style={styles.wzkDeMGT}></View></Pressable></ScrollView>
     </SafeAreaView>;
 };
 
@@ -43,12 +44,12 @@ const styles = StyleSheet.create({
     color: "#828AB0",
     fontWeight: 700
   },
-  footer: {
-    textAlign: "center",
-    fontSize: 18,
-    color: "#828AB0",
-    fontWeight: 700,
-    marginBottom: 20
+  wzkDeMGT: {
+    height: 60,
+    width: 140,
+    backgroundColor: "#E4E4E4",
+    borderRadius: 0,
+    color: "#777777"
   }
 });
 export default WelcomeScreen;
